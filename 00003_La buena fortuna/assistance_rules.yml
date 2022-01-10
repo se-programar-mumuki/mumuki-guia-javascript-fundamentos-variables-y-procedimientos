@@ -1,0 +1,13 @@
+---
+rules:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    these_expectations_failed:
+    - "* DeclaresComputationWithArity0:aumentarFortuna"
+  then: tenés que declarar un procedimiento que no tenga parámetros
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    these_expectations_failed:
+    - "* Not:SourceContains:return"
+  then: recordá que sólo tenés que asignar la variable global; no uses `return` porque
+    no hay que _devolver_ nada

@@ -1,0 +1,5 @@
+expectation "el programa llama a `tirarDado` tres veces":
+  count(calls `tirarDado`) = 3;
+  
+expectation "el programa llama a `imprimir` cuatro veces":
+  count(calls `imprimir`) = 4;

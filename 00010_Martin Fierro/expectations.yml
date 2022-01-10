@@ -1,0 +1,11 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: Declares:versosMartinFierro
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: DeclaresComputationWithArity0:versosMartinFierro
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: versosMartinFierro
+  inspection: Uses:imprimir

@@ -1,0 +1,20 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: DeclaresFunction:areaCirculo
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: DeclaresFunction:perimetroCirculo
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: areaCirculo
+  inspection: Uses:pi
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: perimetroCirculo
+  inspection: Uses:pi
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: Except:HasTooShortIdentifiers
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: DeclaresVariable:pi
